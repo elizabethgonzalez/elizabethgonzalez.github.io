@@ -213,3 +213,41 @@ a {
 a:hover, a:focus, a:active {
   color: #824027;
 }
+
+.typewriter {
+  overflow: hidden; /* hide letters */
+  border-right: .1em solid transparent; /* cursor */
+  white-space: nowrap;
+  animation:
+  typing 3s steps(15, end),
+  blinking .5s step-end 6;
+}
+
+@keyframes typing {
+  0% {width: 0;}
+  25% {width:4em;}
+  55% {width:4em;}
+  85% {width:11em;}
+  100% {width: 11em;}
+}
+
+.typewriter1 {
+  overflow: hidden; /* hide letters */
+  border-right: .05em solid transparent; /* cursor */
+  white-space: nowrap;
+  padding-bottom: .5rem;
+  animation-delay: 3s;
+  animation:
+  typing1 3s 3.5s steps(22, end) backwards,
+  blinking .5s 3.5s step-end 6;
+}
+
+@keyframes typing1 {
+  from {width:0}
+  to {width:50%}
+}
+
+@keyframes blinking {
+  from, to {border-color: transparent}
+  50% {border-color: #9c364a;}
+}
