@@ -244,10 +244,10 @@ a:hover, a:focus, a:active {
 
 @keyframes typing1 {
   0% {width: 0;}
-  40% {width: 30%;}
-  50% {width: 30%;}
-  85% {width: 60%;}
-  100% {width: 60%;}
+  40% {width: 33%;}
+  50% {width: 33%;}
+  85% {width: 63%;}
+  100% {width: 63%;}
   /* from {width:0}
   to {width:65%} */
 }
@@ -264,4 +264,26 @@ a:hover, a:focus, a:active {
 @keyframes fadein {
   from {opacity: 0;}
   to {opacity: 1;}
+}
+.odd {
+  border: 10px solid;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: #9c364a;
+  border-bottom-color: #9c364a;
+  border-bottom-left-radius: 0;
+}
+.even {
+  border: 10px solid;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: #9c364a;
+  border-left-color: #9c364a;
+}
+.even-last {
+  border: 10px solid;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: #9c364a;
 }
