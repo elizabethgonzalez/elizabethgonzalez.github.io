@@ -40,7 +40,7 @@ h6 {
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 4rem;
   line-height: 5.5rem;
 }
 
@@ -238,16 +238,30 @@ a:hover, a:focus, a:active {
   padding-bottom: .5rem;
   animation-delay: 3s;
   animation:
-  typing1 3s 3.5s steps(22, end) backwards,
-  blinking .5s 3.5s step-end 6;
+  typing1 4.5s 3.5s steps(60, end) backwards,
+  blinking .5s 3.5s step-end 9;
 }
 
 @keyframes typing1 {
-  from {width:0}
-  to {width:50%}
+  0% {width: 0;}
+  40% {width: 30%;}
+  50% {width: 30%;}
+  85% {width: 60%;}
+  100% {width: 60%;}
+  /* from {width:0}
+  to {width:65%} */
 }
 
 @keyframes blinking {
   from, to {border-color: transparent}
   50% {border-color: #9c364a;}
+}
+
+.fade {
+  animation: fadein 1.75s ease-in 6.5s both;
+}
+
+@keyframes fadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
