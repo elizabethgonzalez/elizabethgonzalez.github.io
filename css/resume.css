@@ -246,8 +246,8 @@ a:hover, a:focus, a:active {
   0% {width: 0;}
   40% {width: 33%;}
   50% {width: 33%;}
-  85% {width: 63%;}
-  100% {width: 63%;}
+  85% {width: 65%;}
+  100% {width: 65%;}
   /* from {width:0}
   to {width:65%} */
 }
