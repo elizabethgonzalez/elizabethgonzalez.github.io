@@ -141,6 +141,19 @@
 
     </section>
 
+    <script>
+    function toggleExtraContent() {
+      var el = document.getElementById("extra");
+      if (el.style.display === "block") {
+        el.style.display = "none";
+        document.getElementById("toggler").innerHTML = "More";
+      } else {
+        el.style.display = "block";
+        document.getElementById("toggler").innerHTML = "Less";
+      }
+    }
+    </script>
+
     <hr class="m-0">
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
@@ -201,19 +214,6 @@
       </div>
     </div>
     </section>
-
-<script>
-function toggleExtraContent() {
-  var el = document.getElementById("extra");
-  if (el.style.display === "none") {
-    el.style.display = "block";
-    document.getElementById("toggler").innerHTML = "Less";
-  } else {
-    el.style.display = "none";
-    document.getElementById("toggler").innerHTML = "More";
-  }
-}
-</script>
 
     <hr class="m-0">
 <!--
