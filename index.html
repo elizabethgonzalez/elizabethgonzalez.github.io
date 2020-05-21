@@ -104,7 +104,18 @@
       <div class="w-100">
         <h2 class="mb-5 main">experience</h2>
 
-        <div class="resume-item d-flex flex-column flex-md-row"> <!--justify-content-between-->
+        <div class="resume-item d-flex flex-column flex-md-row">
+          <div class="resume-content">
+            <h3 class="mb-0 text-md-left main">Major League Hacking</h3>
+            <div class="subheading mb-3 main">Coach</div>
+            <p>As someone allergic to free time, when I heard through my involvement in AthenaHacks about the opportunity to attend a summer conference for hackathon organizers in Pennsylvania, I jumped at the chance. A few panels and fireside chats later, I was hooked. I learned about what it meant to be a part of the global student hacker community, and it clicked for me that the MLH Coach role was exactly what I had been looking for. It was a chance to empower to empower people outside my local community while still learning and growing myself. As a Coach, I travel to student hackathons and represent MLH, providing resources and mentorship for event organizers and attendees. While I was lucky enough to travel to Boston, San Jose, and Dallas, my travel is paused for now. I've been keeping busy by contributing digitally in the form of facilitating online technical workshops for the Localhost program, as well as staffing digital events.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">November 2019 - Present <br> Various, N.A.</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row">
           <div class="resume-content">
             <h3 class="mb-0 text-md-left main">Girls Who Code</h3>
             <div class="subheading mb-3 main">Teaching Assistant</div>
@@ -126,6 +137,44 @@
           </div>
         </div>
 
+      </div>
+
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+      <div class="w-100">
+        <h2 class="main mb-5">education</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 style ="text-align: left;" class="mb-0 main">University of Southern California</h3>
+            <div class="subheading mb-3">Computer Science/Business Administration, Bachelor of Science</div>
+            <div><strong>Presidential Scholar | Viterbi Scholar</strong></div>
+            <p>GPA: 3.07</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">August 2018 - May 2022</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-3 main">Notre Dame High School</h3>
+            <!--<div class="subheading mb-3">Maxima Cum Laude</div>-->
+            <p> <strong> Maxima Cum Laude </strong><br> GPA: 3.95/4.54 (weighted)</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">August 2014 - May 2018</span>
+          </div>
+        </div>
+
+        <div class="resume-content d-flex justify-content-center pt-4">
+          <button id="toggler" onclick="toggleExtraContent()" class = "btn btn-dark" style="text-align:center;">More</button>
+        </div>
+
+        <div id="extra" class="pt-5">
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
           <div class="resume-content">
             <h3 class="mb-0 text-md-left main">Carleton College Summer Computer Science Institute</h3>
@@ -148,41 +197,23 @@
           </div>
         </div>
 
-      </div>
-
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
-      <div class="w-100">
-        <h2 class="main mb-5">education</h2>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 style ="text-align: left;" class="mb-0 main">University of Southern California</h3>
-            <div class="subheading mb-3">Computer Science/Business Administration, Bachelor of Science</div>
-            <div><strong>Presidential Scholar | Viterbi Scholar</strong></div>
-            <p>GPA: 3.23</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">August 2018 - May 2022</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-3 main">Notre Dame High School</h3>
-            <!--<div class="subheading mb-3">Maxima Cum Laude</div>-->
-            <p> <strong> Maxima Cum Laude </strong><br> GPA: 3.95/4.54 (weighted)</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">August 2014 - May 2018</span>
-          </div>
-        </div>
 
       </div>
+    </div>
     </section>
+
+<script>
+function toggleExtraContent() {
+  var el = document.getElementById("extra");
+  if (el.style.display === "none") {
+    el.style.display = "block";
+    document.getElementById("toggler").innerHTML = "Less";
+  } else {
+    el.style.display = "none";
+    document.getElementById("toggler").innerHTML = "More";
+  }
+}
+</script>
 
     <hr class="m-0">
 <!--

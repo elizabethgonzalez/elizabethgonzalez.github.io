@@ -287,3 +287,7 @@ a:hover, a:focus, a:active {
   border-bottom-color: transparent;
   border-left-color: #9c364a;
 }
+
+#extra {
+  display: none;
+}
