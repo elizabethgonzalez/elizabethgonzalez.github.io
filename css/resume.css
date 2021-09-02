@@ -70,7 +70,6 @@ p.lead {
 }
 
 .subheading {
-  text-transform: uppercase;
   font-weight: 500;
   font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-size: 2rem;
@@ -109,7 +108,6 @@ p.lead {
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 800;
   letter-spacing: 0.05rem;
-  text-transform: uppercase;
 }
 
 #sideNav .navbar-toggler:focus {
@@ -219,8 +217,8 @@ a:hover, a:focus, a:active {
   border-right: .1em solid transparent; /* cursor */
   white-space: nowrap;
   animation:
-  typing 3s steps(15, end),
-  blinking .5s step-end 6;
+  typing 2s steps(20, end),
+  blinking .3s step-end 8;
 }
 
 @keyframes typing {
@@ -238,7 +236,7 @@ a:hover, a:focus, a:active {
   padding-bottom: .5rem;
   animation-delay: 3s;
   animation:
-  typing1 4.5s 3.5s steps(60, end) backwards,
+  typing1 4.5s 1.5s steps(60, end) backwards,
   blinking .5s 3.5s step-end 9;
 }
 
@@ -258,7 +256,7 @@ a:hover, a:focus, a:active {
 }
 
 .fade {
-  animation: fadein 1.75s ease-in 6.5s both;
+  animation: fadein .75s ease-in 2.5s both;
 }
 
 @keyframes fadein {
